@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="" style="background-color: #F8EDE3; color: #664343;">
-    <nav class="ml-1 md:ml-20 mr-20 text-black  ">
+    <nav class="ml-1 mt-4 md: mt-4 text-black sticky top-0 p-4 " style="background-color: #f8ede4;">
         <div class="flex items-center justify-between ">
             <div class="flex space-x-4 ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -19,9 +19,10 @@
     
             <div class="ml-auto ">
                 <ul class="hidden md:hidden lg:flex  space-x-20  ">
-                    <li class="hover:text-red-500"><a href="">Home</a></li>
-                    <li class="hover:text-red-500"><a href="">Resume</a></li>
-                    <li class="hover:text-red-500"><a href="">About Me</a></li>
+                    <li class="hover:text-red-500"><a href="#Home">Home</a></li>
+                    <li class="hover:text-red-500"><a href="#About Me">About Me</a></li>
+                    <li class="hover:text-red-500"><a href="#Skills">Skills</a></li>
+                    <li class="hover:text-red-500"><a href="#Works">Works</a></li>
                 </ul>
             </div>
 
@@ -30,13 +31,34 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                 </svg>                
-                  <li class="hover:text-red-500 "><a href="">Email</a></li>
+                  <li class="hover:text-red-500 "><a href="mailto:6640011034@psu.ac.th">Email</a></li>
               </ul>
           </div>
         </div>
     </nav>
+
+
+
+    <div class="flex-col md:flex-row mt-4 p-8 flex justify-between items-center ">
+      <div class=" flex-1 text-center  ">
+        <h1 class=" text-5xl font-bold">Punnapob Wisarat</h1>
+        <p class="max-w-md text-gray-600 mx-auto mt-4 text-lg">
+          Success is not final, failure is not fatal: it is the courage to continue that counts.
+        </p>
+      </div>
+      
+      <div id="Home">
+        <img
+        class="w-96 mt-5 :w-80 lg:w-[600px] h-[600px] object-cover rounded-2xl "
+        src="https://scontent.fbkk9-2.fna.fbcdn.net/v/t39.30808-6/331308721_855795285506633_3449997659261458051_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=jrcChcqj5mYQ7kNvgFdzjuB&_nc_oc=AdjEyZQNQp5luaF99EoGEUrGh1YJA7A3l1Zzerv5pEM6bHou4Vhj3q5tItGZadOMndK1T6zrFt27m6IVwsk3ipIX&_nc_zt=23&_nc_ht=scontent.fbkk9-2.fna&_nc_gid=A200wuf4afE0iHjwqMr2WLH&oh=00_AYBCKMtoHvI8HTXKYErZFZTxS8vFmHS0RQZ4QxB3jVr8rg&oe=67B50EBC"
+        alt="Punnapob Wisarat"
+    />
+  </div>
+      </div>
+
     
-    <div class="mt-4 p-8 flex flex-col items-center">
+    <div class="mt-4 p-8 flex flex-col items-center" >
+      <h1 id="About Me"class="text-2xl font-bold mb-4">About Me</h1>
         <div class="pic">
             <img
                 class="h-40 w-40 rounded-full mx-auto"
@@ -44,8 +66,9 @@
                 alt="Punnapob Wisarat"
             />
         </div>
-        <h1 class="text-2xl font-bold text-center mt-4">Punnapob Wisarat</h1>
-        <div class="sm:hidden lg:block  text-center">
+
+
+        <div class="text-center mt-4">
             <h2>Student ID : 6640011034</h2>
             <h2>Study at : Prince of Songkla University Surat Thani Campus</h2>
             <h2>Information Technology</h2>
@@ -53,17 +76,52 @@
     </div>
     
     <br>
+
+
+
+
+    <div class="max-w-lg mx-auto p-6  ">
+      <h2 id="Skills" class="text-2xl font-bold mb-4 text-center"> My Skills </h2>
+    
+
+      <div class="mb-3">
+        <p class="font-medium">VS Code</p>
+        <div class="w-full bg-gray-300 rounded-full h-5">
+          <div class="bg-blue-500 h-5 rounded-full text-white text-xs flex items-center justify-center" style="width: 90%;">4.5/5</div>
+        </div>
+      </div>
+    
+
+      <div class="mb-3">
+        <p class="font-medium">Figma</p>
+        <div class="w-full bg-gray-300 rounded-full h-5">
+          <div class="bg-purple-500 h-5 rounded-full text-white text-xs flex items-center justify-center" style="width: 80%;">4/5</div>
+        </div>
+      </div>
+    
+    
+      <div class="mb-3">
+        <p class="font-medium">JavaScript</p>
+        <div class="w-full bg-gray-300 rounded-full h-5">
+          <div class="bg-yellow-500 h-5 rounded-full text-white text-xs flex items-center justify-center" style="width: 50%;">2.5/5</div>
+        </div>
+      </div>
+    </div>
+    
+
+    <br>
+    <br>
     
       
       
 
-      <h1 class="text-2xl font-bold text-center" style="color: #664343;">Portfolio</h1>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-4 p-4 ml-20 mr-20" >
+      <h1 id="Works" class="text-2xl font-bold text-center" style="color: #664343;">Works</h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-4 p-4 ml-20 mr-20 ">
       
-        <div class="card bg-brown-500 ">
+        <div class="card hover:scale-110 hover:shadow-lg ">
           <a href="work/boxmodel.html">
           <img
-            class="object-cover rounded-lg "
+            class="w-[300px] h-[300px] object-cover rounded-lg"
             src="https://www.stanleypackaging.com.au/wp-content/uploads/2018/05/BX150-1.jpg"
             alt=""
           />
@@ -73,10 +131,10 @@
 
 
 
-        <div class="card">
+        <div class="card hover:scale-110 hover:shadow-lg">
           <a href="work/form.html">
           <img
-          class="rounded-lg "
+          class="rounded-lg w-[300px] h-[300px] object-cover "
             src="https://png.pngtree.com/png-vector/20191201/ourmid/pngtree-hand-filling-checklist-form-illustration-with-man-signing-a-paper-work-png-image_2060668.jpg"
             alt=""
           />
@@ -85,10 +143,10 @@
         </div>
 
 
-        <div class="card">
+        <div class="card hover:scale-110 hover:shadow-lg">
           <a href="work/menu.html">
           <img
-          class="rounded-lg"
+          class="rounded-lg w-[300px] h-[300px] object-cover "
             src="https://www.easycookingmenu.com/media/k2/items/cache/8824c56c994d9f6e54bce08c8e97d4d0_XL.jpg"
             alt=""
           />
@@ -97,18 +155,39 @@
         </div>
 
 
-        <div class="card">
+        <div class="card hover:scale-110 hover:shadow-lg">
           <a href="work/menu2.html">
           <img
-          class="rounded-lg"
+          class="rounded-lg w-[300px] h-[300px] object-cover "
             src="https://thumb.ac-illust.com/72/72394a3f30e762deceae3698359dca2f_t.jpeg"
             alt=""
           />
           <h3 class="heading font-bold text-center">ข้าวมัน.HTML</h3>     
         </a>   
         </div>
-        
+  
     </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div>
+      <div>
+        <h1 class="text-2xl font-bold text-center">Contect</h1>
+        <div class="flex gap-20 justify-center m-10">
+          <p class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none"><a href="https://www.facebook.com/pleum.wisarat/">Facebook</a></p>
+          <p class="bg-gradient-to-r from-pink-500 via-purple-600 to-yellow-400 text-white py-2 px-4 rounded-lg hover:opacity-80 focus:outline-none"><a href="https://www.instagram.com/pleum_wisarat/">instagram</a></p>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
   </body>
 </html>
 
